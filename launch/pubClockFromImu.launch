@@ -1,0 +1,8 @@
+<launch>
+    <param name="/use_sim_time" value="true" />
+
+    <node pkg="clock_tools" type="pubClock" name="pubClock" output="screen">
+        <param name="imuTopic" type="string" value="/imu_raw"/>
+    </node>
+
+</launch>
